@@ -17,7 +17,7 @@ import org.apache.shiro.subject.Subject;
  * @author fabio
  *
  */
-@WebServlet({"success"})
+@WebServlet("success")
 public final class SuccessServlet extends HttpServlet {
 
 	/**
