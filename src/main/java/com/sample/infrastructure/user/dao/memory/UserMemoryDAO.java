@@ -15,20 +15,20 @@ import com.sample.infrastructure.user.dao.UserDAO;
  */
 public final class UserMemoryDAO implements UserDAO {
 	
+	/**
+	 * 
+	 */
 	private static final Map<String, User> USERS = new HashMap<>();
 
 	@Override
 	public User store(User user) {
 	
-		return USERS.put(user.toString(), user);
+		return USERS.put(user.getUsername(), user);
 	}
 
 	@Override
 	public User find(String username) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	
-	
+
+		return USERS.get(username);
+	}	
 }

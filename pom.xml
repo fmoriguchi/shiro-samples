@@ -78,7 +78,7 @@
                 
                 <configuration>
                     <webApp>
-                        <contextPath>/shiro</contextPath>
+                        <contextPath>/</contextPath>
                     </webApp>
                 </configuration>
             </plugin>
